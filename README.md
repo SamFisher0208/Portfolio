@@ -1,6 +1,6 @@
 #Sam Fisher's Portfolio
 
-- Next.js 13
+- Next.js 14
 - React
 - Tailwind
 - Typescript
