@@ -5,7 +5,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import sightLineImg from "@/public/sightline.png";
 import bloodWaveImg from "@/public/bloodwave.png";
-import mtgBotImg from "@/public/mtg.png";
+import mtgBotImg from "@/public/mtg2.png";
 
 export const links = [
   {
