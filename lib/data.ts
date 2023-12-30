@@ -32,7 +32,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const; //this is more precise and explicitly defined, if we removed this line TS would infer the type, 
+] as const; //this is more precise and explicitly defined, if we removed this line TS would infer the type 
 
 export const experiencesData = [
   {
