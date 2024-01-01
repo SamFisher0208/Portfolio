@@ -75,25 +75,30 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 items-center gap-2 rounded-full flex outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 items-center gap-2 rounded-full flex outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here <BsArrowRight className="opacity-70" />
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="bg-white px-7 py-3 items-center gap-2 rounded-full flex"
-          href=""
+          className="group bg-white px-7 py-3 items-center gap-2 rounded-full flex outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+          href="/Sam_Fisher_Resume.pdf"
+          download
         >
-          Download Resume <HiDownload />
+          Download Resume{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          href=""
-          className="bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex"
+          href="https://www.linkedin.com/in/sam-j-fisher/"
+          target="_blank"
+          className="bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
-          href=""
-          className="bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex text-[1.35rem]"
+          href="https://github.com/SamFisher0208"
+          target="_blank"
+          className="bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
         >
           <FaGithubSquare />
         </a>
