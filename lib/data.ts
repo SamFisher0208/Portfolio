@@ -73,21 +73,21 @@ export const projectsData = [
   {
     title: "SightLine",
     description:
-      "SightLine is a React-based web application designed to promote accessibility awareness. It serves as a valuable tool for identifying potentially hazardous elements in video footage, with a focus on detecting issues such as flashing, excessive luminance, and blue light.",
-    tags: ["React", "Next.js", "Framer Motion", "Emotion Styles"],
+      "SightLine is a web app designed to detect hazardous issues in videos, such as flashing, excessive luminance, and blue light.",
+    tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Emotion Styles"],
     imageUrl: sightLineImg,
   },
     {
     title: "MTG!Bot",
     description:
-      "A Discord bot that posts random Magic the Gathering cards at the command of a user. Depending on the command, it can post different types of cards; a creature or sorcery card, as an example",
+      "A Discord bot that posts random Magic the Gathering™ cards at the command of a user.",
     tags: ["Python", "Discord API", "Scryfall API"],
     imageUrl: mtgBotImg,
   },
   {
     title: "Blood Wave",
     description:
-      "Blood Wave is a C++, wave-based survival game. My contributions entailed: concept art and character design, development of a player stamina system, a mini-boss, an enemy attack state, GUI implementation, and several animation cycles.",
+      "Blood Wave is a wave-based survival game built in LARC, a custom-made C++ engine.",
     tags: ["C++", "DirectX12"],
     imageUrl: bloodWaveImg,
   },
