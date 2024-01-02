@@ -28,8 +28,8 @@ export default function About() {
         software developer, with the desire to specialize in front-end.
       </p>
       <p>
-        <span className="italic">Apart from my profesional life</span>, I have a
-        great passion for art and have been drawing since I could pick up a
+        <span className="italic">Apart from my professional life</span>, I have
+        a great passion for art and have been drawing since I could pick up a
         crayon. I also enjoy playing video games, watching movies, and being cat
         mom to three cats: Fen, Lady, and Salem.
       </p>
