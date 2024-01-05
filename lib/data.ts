@@ -47,7 +47,7 @@ export const experiencesData = [
     title: "DTS Internship",
     location: "Richardson, TX",
     description:
-      "I worked for RESPEC as a Data and Technology Solutions intern during Summer of 2023. I primarily assissted in the conversion of RAP, a comprehensive web application using Angular for the frontend and Spring Boot for the backend.",
+      "I worked for RESPEC as a Data and Technology Solutions intern during Summer of 2023. I primarily assissted in the conversion of RAP, a web application using Angular for the frontend and Spring Boot for the backend.",
     icon: React.createElement(MdOutlineWorkOutline),
     date: "2023",
   },
