@@ -5,7 +5,6 @@
 /* Create Custom Scrollbar */
 /* Firefox */
 * {
-  scrollbar-width: thin;
   scrollbar-color: #222831 #222831;
 }
 

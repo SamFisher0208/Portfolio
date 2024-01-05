@@ -32,7 +32,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const; //this is more precise and explicitly defined, if we removed this line TS would infer the type 
+] as const; //this is more precise and explicitly defined, if we removed this line TS would infer the type
 
 export const experiencesData = [
   {
@@ -77,7 +77,7 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Emotion Styles"],
     imageUrl: sightLineImg,
   },
-    {
+  {
     title: "MTG!Bot",
     description:
       "A Discord bot that posts random Magic the Gathering™ cards at the command of a user.",
@@ -105,7 +105,6 @@ export const skillsData = [
   "Tailwind",
   "Angular",
   "Framer Motion",
-  "MongoDB",
   "PostgreSQL",
   "Python",
   "C++",
