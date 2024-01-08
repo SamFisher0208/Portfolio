@@ -2,6 +2,7 @@
 
 import { validateString, getErrorMessage } from "@/lib/utils";
 import { Resend } from "resend";
+import ContactFormEmail from "@/email/contactFormEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -28,7 +29,10 @@ export async function sendEmail(formData: FormData) {
       to: "samanthajfisher.cs@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail as string,
-      text: senderMessage as string,
+      react: ContactFormEmail({
+        senderMessage: senderMessage as string,
+        senderEmail: senderEmail as string,
+      }),
     });
   } catch (error) {
     return {
