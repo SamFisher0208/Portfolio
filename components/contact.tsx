@@ -2,10 +2,10 @@
 
 import React from "react";
 import SectionHeading from "./sectionHeading";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submitBtn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -40,7 +40,20 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          await sendEmail(formData);
+          const response = await sendEmail(formData);
+
+          // The error is now directly in the response, not inside a 'data' object
+          if (response.error) {
+            // Assuming 'response.error' is a string or an object with a 'message' property
+            const errorMessage =
+              typeof response.error === "object" && response.error.message
+                ? response.error.message
+                : response.error;
+            alert(errorMessage);
+            return;
+          }
+
+          alert("Email sent successfully!");
         }}
       >
         <input
@@ -59,21 +72,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <button
-          className="group h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all flex items-center justify-center gap-2
-          focus:scale-110 
-          hover:scale-110 
-          active:scale-105
-          hover:bg-gray-950"
-          type="submit"
-        >
-          Submit{" "}
-          <FaPaperPlane
-            className="text-xs opacity-70 transition-all
-          group-hover:translate-x-1 
-          group-hover:-translate-y-1"
-          />{" "}
-        </button>
+        <SubmitBtn></SubmitBtn>
       </form>
     </motion.section>
   );

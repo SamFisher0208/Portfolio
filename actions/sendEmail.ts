@@ -6,7 +6,12 @@ import ContactFormEmail from "@/email/contactFormEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function sendEmail(formData: FormData) {
+type EmailResponse = {
+  data?: any; // Replace 'any' with a more specific type if possible
+  error?: string | { message: string };
+};
+
+export async function sendEmail(formData: FormData): Promise<EmailResponse> {
   const senderEmail = formData.get("senderEmail");
   const senderMessage = formData.get("senderMessage");
 
@@ -23,20 +28,37 @@ export async function sendEmail(formData: FormData) {
     };
   }
 
+  let data;
+
   try {
-    resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+    const response = await resend.emails.send({
+      from: "Contact Form <onboarding@resend.com>",
       to: "samanthajfisher.cs@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail as string,
       react: ContactFormEmail({
-        senderMessage: senderMessage as string,
         senderEmail: senderEmail as string,
+        senderMessage: senderMessage as string,
       }),
     });
-  } catch (error) {
+
+    // Check if the response contains an error
+    if (response.error) {
+      console.error("Error sending email:", response.error);
+      return {
+        error: getErrorMessage(response.error),
+      };
+    }
+
+    data = response.data;
+  } catch (error: unknown) {
+    console.error("Error sending email in catch:", getErrorMessage(error));
     return {
       error: getErrorMessage(error),
     };
   }
+
+  return {
+    data,
+  };
 }
