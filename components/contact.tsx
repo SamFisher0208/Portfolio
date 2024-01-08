@@ -30,7 +30,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="dark:text-white/80 text-gray-700 -mt-6">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:samanthajfisher.cs@gmail.com">
           samanthajfisher.cs@gmail.com
@@ -39,7 +39,7 @@ export default function Contact() {
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="dark:text-black mt-10 flex flex-col"
         action={async (formData) => {
           const response = await sendEmail(formData);
 
@@ -59,7 +59,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 rounded-lg borderBlack px-4"
+          className="dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none h-14 rounded-lg borderBlack px-4"
           type="email"
           required
           maxLength={500}
@@ -68,7 +68,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none h-52 my-3 rounded-lg borderBlack p-4"
           placeholder="Your message"
           name="senderMessage"
           required

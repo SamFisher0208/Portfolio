@@ -94,7 +94,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-3 items-center gap-2 rounded-full flex outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack"
+          className="dark:bg-white/10 group bg-white px-7 py-3 items-center gap-2 rounded-full flex outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack"
           href="/Sam_Fisher_Resume.pdf"
           download
         >
@@ -104,14 +104,14 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/sam-j-fisher/"
           target="_blank"
-          className="bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
+          className="dark:bg-white/10 dark:text-white/60 dark:hover:text-white bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/SamFisher0208"
           target="_blank"
-          className="bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
+          className="dark:bg-white/10 dark:text-white/60 dark:hover:text-white bg-white text-gray-700 p-4 items-center gap-2 rounded-full flex text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
         >
           <FaGithubSquare />
         </a>
