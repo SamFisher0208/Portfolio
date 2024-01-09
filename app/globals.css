@@ -17,15 +17,10 @@ html.dark {
 /* Create Custom Scrollbar */
 /* Firefox */
 * {
-  scrollbar-color: #222831 #222831;
+  scrollbar-color: #373f4b #222831;
 }
 
 /* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-  width: 10px;
-  width: 10px;
-}
-
 *::-webkit-scrollbar-track {
   background-color: #ffffff00;
 }
