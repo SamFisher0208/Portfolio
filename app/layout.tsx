@@ -13,7 +13,7 @@ export const metadata = {
   title: "Sam Fisher | Dev Portfolio",
   description: "Sam Fisher is a Junior Developer looking for work!",
   icons: {
-    icon: "/icon.png",
+    icon: "/image/icon.png",
   },
 };
 
