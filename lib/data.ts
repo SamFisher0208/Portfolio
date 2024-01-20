@@ -4,8 +4,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import { RiComputerLine } from "react-icons/ri";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import sightLineImg from "@/public/sightline.png";
-import bloodWaveImg from "@/public/bloodwave.png";
+import bloodWaveImg from "@/public/bloodwave2.png";
 import mtgBotImg from "@/public/mtg2.png";
+import portfolioImg from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -71,10 +72,17 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Portfolio",
+    description:
+      "I built this portfolio as a way to show off my work and to practice current web dev technologies.",
+    tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Tailwind CSS"],
+    imageUrl: portfolioImg,
+  },
+  {
     title: "SightLine",
     description:
-      "SightLine is a web app designed to detect hazardous issues in videos, such as flashing, excessive luminance, and blue light.",
-    tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Emotion Styles"],
+      "A web app designed to detect hazardous issues in videos, such as flashing, excessive luminance, and blue light.",
+    tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Emotion CSS"],
     imageUrl: sightLineImg,
   },
   {
@@ -87,7 +95,7 @@ export const projectsData = [
   {
     title: "Blood Wave",
     description:
-      "Blood Wave is a wave-based survival game built in LARC, a custom-made C++ engine.",
+      "A wave-based survival game built in LARC, a custom-made C++ engine.",
     tags: ["C++", "DirectX12"],
     imageUrl: bloodWaveImg,
   },
