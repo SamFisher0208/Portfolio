@@ -72,18 +72,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Portfolio",
-    description:
-      "I built this portfolio as a way to show off my work and to practice current web dev technologies.",
-    tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Tailwind CSS"],
-    imageUrl: portfolioImg,
-  },
-  {
     title: "SightLine",
     description:
       "A web app designed to detect hazardous issues in videos, such as flashing, excessive luminance, and blue light.",
     tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Emotion CSS"],
     imageUrl: sightLineImg,
+    hostUrl: "https://sight-line.vercel.app/",
   },
   {
     title: "MTG!Bot",
@@ -91,6 +85,15 @@ export const projectsData = [
       "A Discord bot that posts random Magic the Gathering™ cards at the command of a user.",
     tags: ["Python", "Discord API", "Scryfall API"],
     imageUrl: mtgBotImg,
+    hostUrl: "https://github.com/SamFisher0208/MTGBot",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "I built this portfolio as a way to show off my work and to practice current web dev technologies.",
+    tags: ["React", "TypeScript", "Next.js", "Framer Motion", "Tailwind CSS"],
+    imageUrl: portfolioImg,
+    hostUrl: "https://github.com/SamFisher0208/Portfolio",
   },
   {
     title: "Blood Wave",
@@ -98,6 +101,7 @@ export const projectsData = [
       "A wave-based survival game built in LARC, a custom-made C++ engine.",
     tags: ["C++", "DirectX12"],
     imageUrl: bloodWaveImg,
+    hostUrl: "https://github.com/Geeknerd1337/Bloodwave",
   },
 ] as const;
 
